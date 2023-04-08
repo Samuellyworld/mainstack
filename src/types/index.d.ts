@@ -6,3 +6,10 @@ declare module "react-flags";
 declare module "*.jpg";
 declare module "*.png";
 declare module "*.svg";
+
+// interface view type
+export interface ViewType {
+    name: string;
+    pv: number;
+    uv: number;
+  }
