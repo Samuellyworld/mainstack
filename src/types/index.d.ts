@@ -13,3 +13,6 @@ export interface ViewType {
     pv: number;
     uv: number;
   }
+
+// graph data Type
+export type GraphDataType = [string[] | T , Dispatch<React.SetStateAction<never[]>>]
