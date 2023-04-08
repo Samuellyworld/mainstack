@@ -7,7 +7,7 @@ export const GraphContainer = styled.div`
   height: 40vh;
   margin-bottom: 2rem;
   width: 100%;
-  z-index: 6000;
+  z-index: 1;
 
   .recharts-cartesian-axis-tick-value {
     font-size: 0.8rem;

@@ -19,7 +19,7 @@ const Homepage = () => {
 
   return (
     <HomepageContainer>
-      <img
+          <img
         src="/svgs/Menu.svg"
         alt="menu"
         height={30}
@@ -30,6 +30,13 @@ const Homepage = () => {
           display: isOpen ? "none" : "block",
         }}
       />
+
+      <div
+        className="side-bar"
+        style={{
+          left: isOpen ? 0 : "-100%",
+        }}
+      >
 
       <img
         src="/svgs/close.svg"
@@ -42,12 +49,6 @@ const Homepage = () => {
           display: isOpen ? "block" : "none",
         }}
       />
-      <div
-        className="side-bar"
-        style={{
-          left: isOpen ? 0 : "-100%",
-        }}
-      >
         <Sidebar />
       </div>
       <Main />

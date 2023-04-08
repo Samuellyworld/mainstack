@@ -16,6 +16,7 @@ import {
   
   // import types
   import { ViewType } from "../../types";
+import Spinner from "../spinner";
 
   
 // convert views to object
@@ -62,17 +63,21 @@ import {
   
     // Building block
     return (
-      <GraphContainer>
-        <ResponsiveContainer width={width > 1072 ? "100%" : "95%"} height="100%">
-          <AreaChart
-            data={theData}
-            margin={{
-              top: 10,
-              right: 0,
-              left: -30,
-              bottom: 0,
-            }}
-          >
+        <>   
+      {
+        !theData ? 
+        <Spinner/> : 
+           <GraphContainer>
+            <ResponsiveContainer width={width > 1072 ? "100%" : "95%"} height="100%">
+            <AreaChart
+                data={theData}
+                margin={{
+                top: 10,
+                right: 0,
+                left: -30,
+                bottom: 0,
+                }}
+            >
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             <XAxis dataKey="name" />
             <YAxis />
@@ -92,6 +97,10 @@ import {
           </AreaChart>
         </ResponsiveContainer>
       </GraphContainer>
+         }
+   
+        </>
+      
     );
   };
   
