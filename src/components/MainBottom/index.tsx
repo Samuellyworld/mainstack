@@ -136,9 +136,10 @@ const MainBottom = () => {
         <MainBottomLower>
           <MainBottomLeft>
             {locationData.map((one: any, idx: number) => {
+                console.log(one, "one")
               return (
                 <MainAnalytic>
-                  <MainFlag src={`assets/${one.source}.png`} alt="icon" />
+                  <MainFlag src={`pngs/${one.source}.png`} alt="icon" />
                   <MainTextAndPer>
                     {capitalizeFirstLetter(one.source)} <span>{one.percent}%</span>
                   </MainTextAndPer>

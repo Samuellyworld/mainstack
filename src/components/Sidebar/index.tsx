@@ -15,7 +15,7 @@ const Sidebar = () => {
 // Building Block
   return (
     <SidebarContainer>
-      <SidebarLogo src="/assets/pngs/logo.png" alt="logo" />
+      <SidebarLogo src="/pngs/logo.png" alt="logo ok" />
 
       <SidebarLink>
         <svg
@@ -242,7 +242,7 @@ const Sidebar = () => {
 
       <ProfileContainer>
         <ProfilePic
-          src="/assets/image.png"
+          src="/pngs/image.png"
           alt="profile pic"
           height={35}
           width={35}
