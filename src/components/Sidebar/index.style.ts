@@ -105,8 +105,11 @@ export const ProfileContainer = styled.div`
   gap: 0.7rem;
   padding: 0.5rem 2.5rem;
   align-items: center;
-
   margin-top: 5rem;
+
+  @media screen and (max-width : 800px) {
+    margin-top : 3rem;
+  }
 `;
 
 // profile styles
@@ -114,4 +117,5 @@ export const ProfilePic = styled.img``;
 export const ProfileName = styled.span`
   color: #56616b;
   font-size: 0.8rem;
+
 `;

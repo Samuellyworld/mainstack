@@ -23,9 +23,12 @@ export const HomepageContainer = styled.div`
   .side-bar {
     background-color: white;
     transition: 0.2s all ease-out;
-
+    z-index: 2;
+    position : sticky;
+    top: 0;
+    
     @media screen and (max-width: 1072px) {
-      position: absolute;
+      position: fixed;
       left: 0;
       top: 0;
     }
@@ -34,7 +37,7 @@ export const HomepageContainer = styled.div`
   .menu-icon {
     display: none;
     opacity: 0;
-    position: absolute;
+    position: fixed;
     top: 0.5rem;
     left: 1rem;
     z-index: 20000;
